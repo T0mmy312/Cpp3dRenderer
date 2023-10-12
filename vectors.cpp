@@ -94,3 +94,8 @@ bool vecPar(vector3 a, vector3 b)
     float magProd = a.lenght() * b.lenght();
     return fabs(dotProd - magProd) < FLOAT_TOL;
 }
+
+vector3 addVec(vector3 a, vector3 b)
+{
+    // Add gpu vector addition
+}

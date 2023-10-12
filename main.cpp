@@ -1,5 +1,6 @@
 #include <iostream>
 #include "vectors.cpp"
+#include "renderer.cpp"
 
 #define cout std::cout
 #define cin std::cin
@@ -7,5 +8,5 @@
 
 int main()
 {
-    
+    init();
 }
