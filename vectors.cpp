@@ -90,12 +90,13 @@ vector3 crossProd(vector3 a, vector3 b)
 
 bool vecPar(vector3 a, vector3 b)
 {
-    float dotProd = a.x * b.x + a.y * b.y + a.z * b.z;
-    float magProd = a.lenght() * b.lenght();
+    float dotProd = a.x * b.x + a.y * b.y + a.z * b.z; // matrixmultiplication in gpu!
+    float magProd = a.lenght() * b.lenght(); // matrixmultiplication in gpu!
     return fabs(dotProd - magProd) < FLOAT_TOL;
 }
 
-vector3 addVec(vector3 a, vector3 b)
+bool vecNorm(vector3 a, vector3 b)
 {
-    // Add gpu vector addition
+    float dotProd = a.x * b.x + a.y * b.y + a.z * b.z; // matrixmultiplication in gpu!
+    return dotProd < FLOAT_TOL;
 }
